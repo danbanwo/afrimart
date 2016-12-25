@@ -1,10 +1,15 @@
 {
   "name": "afrimart",
   "version": "1.0.0",
-  "description": "Holiday side project",
-  "main": "App.js",
+  "description": "Holiday project",
+  "main": "./front/App.js",
   "scripts": {
+    "start": "webpack --watch & nodemon ./back/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbanwo/afrimart.git"
   },
   "author": "Daniel Sangobanwo",
   "license": "ISC",
@@ -21,10 +26,18 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",
+    "redux": "*",
+    "react-redux": "*",
     "sequelize": "^3.27.0",
     "sequelize-cli": "^2.4.0",
     "webpack": "^1.13.3",
     "nodemon": "*",
-    "debug": "*"
-  }
+    "debug": "*",
+    "react-tap-event-plugin": "^2.0.1",
+    "webpack-livereload-plugin": "^0.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/danbanwo/afrimart/issues"
+  },
+  "homepage": "https://github.com/danbanwo/afrimart#readme"
 }
